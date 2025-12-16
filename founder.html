@@ -54,39 +54,79 @@
       <div class="bg-square s3"></div>
     </div>
 
-    <!-- ================= HEADER ================= -->
+        <!-- ================= HEADER ================= -->
     <header class="site-header" id="site-header">
       <div class="container">
         <div class="header-inner">
-
-          <!-- ЛЕВОЕ МЕНЮ -->
+          <!-- LEFT MENU (one row) -->
           <nav class="nav-desktop nav-left" aria-label="Main navigation left">
             <div class="nav-row">
-              <a class="nav-link" href="/#about">About Us</a>
-              <a class="nav-link" href="/#services">Services</a>
-            </div>
-            <div class="nav-row">
-              <a class="nav-link" href="/#parents">Intended Parents</a>
-              <a class="nav-link" href="/#agencies">Agencies &amp; Clinics</a>
+              <a class="nav-link" href="#about">About Us</a>
+              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#parents">Intended Parents</a>
+              <a class="nav-link" href="#agencies">Agencies &amp; Clinics</a>
             </div>
           </nav>
 
-          <!-- ЛОГО В ЦЕНТРЕ (на молочной полосе) -->
-          <a href="/" class="header-logo" aria-label="REPRONOVA homepage">
-            <img src="img/logo.jpg" alt="REPRONOVA" class="logo-icon" />
+          <!-- LOGO -->
+          <a href="#top" class="header-logo" aria-label="REPRONOVA homepage">
+            <img src="./img/logo-Photoroom.png" alt="REPRONOVA" class="logo-icon" />
           </a>
 
-          <!-- ПРАВОЕ МЕНЮ -->
+          <!-- RIGHT MENU (one row) -->
           <nav class="nav-desktop nav-right" aria-label="Main navigation right">
-            <div class="nav-row">
-              <a class="nav-link" href="/#surrogates">Surrogates &amp; Donors</a>
-              <a class="nav-link" href="/#news">News &amp; Events</a>
-            </div>
-            <div class="nav-row">
-              <a class="nav-link" href="/#resources">Resources</a>
-              <a class="nav-link nav-link--primary" href="/#contacts">Contacts</a>
+            <div class="nav-row nav-row--right">
+              <a class="nav-link" href="#surrogates">Surrogates &amp; Donors</a>
+              <a class="nav-link" href="#news">News &amp; Events</a>
+              <a class="nav-link" href="#resources">Resources</a>
+
+              <!-- symmetry group -->
+              <div class="nav-right-tools" aria-label="Header tools">
+                <a class="nav-link nav-link--primary" href="#contacts">Contacts</a>
+
+                <button
+                  class="nav-icon-btn"
+                  id="open-search"
+                  type="button"
+                  aria-label="Search"
+                  aria-controls="search-overlay"
+                  aria-expanded="false"
+                  title="Search"
+                >
+                  <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+
+                <div class="lang-switcher" id="lang-switcher">
+                  <button class="lang-current" type="button" aria-haspopup="true" aria-expanded="false">
+                    EN
+                  </button>
+                  <div class="lang-menu" role="menu" aria-label="Language menu">
+                    <button data-lang="en" class="active" type="button" role="menuitem">
+                      EN — English
+                    </button>
+                    <button data-lang="es" type="button" role="menuitem">ES — Español</button>
+                    <button data-lang="de" type="button" role="menuitem">DE — Deutsch</button>
+                    <button data-lang="ru" type="button" role="menuitem">RU — Русский</button>
+                  </div>
+                </div>
+              </div>
+              <!-- /symmetry group -->
             </div>
           </nav>
+
+          <!-- Mobile controls (only burger here) -->
+          <div class="header-controls">
+            <button
+              class="burger"
+              id="burger"
+              type="button"
+              aria-label="Open navigation"
+              aria-controls="nav-mobile"
+              aria-expanded="false"
+            >
+              <span class="burger-line"></span>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -123,18 +163,17 @@
 
           <div class="founder-layout">
             <div class="founder-photo" data-aos="fade-right">
-              <div class="founder-tag">Founder</div>
             </div>
             <div class="founder-text" data-aos="fade-left">
-              <h3>About Sergii Antonov</h3>
-              <p>
+              <h3 style="color: black;">About Sergii Antonov</h3>
+              <p style="color: black;">
                 Sergii Antonov is a fertility and medical lawyer and the founder
                 of REPRONOVA Agency. Trained as both a physician and an attorney,
                 he has spent more than twenty years advising clinics, agencies,
                 and intended parents on the legal and ethical safeguards of
                 cross-border surrogacy and assisted reproduction.
               </p>
-              <p>
+              <p style="color: black;">
                 Drawing on his unique combination of clinical insight and legal
                 expertise, Sergii helps families build safe, transparent, and
                 legally secure paths to parenthood. His work focuses on
@@ -142,7 +181,7 @@
                 compliance with regulations in multiple jurisdictions, and
                 promoting ethical standards in the global fertility industry.
               </p>
-              <p>
+              <p  style="color: black;">
                 Through REPRONOVA, Sergii supports intended parents, agencies,
                 clinics and donors worldwide, building bridges between medical
                 practice and the law so that every child’s story begins with
@@ -153,7 +192,7 @@
                 <a href="/#about" class="btn-primary">
                   Back to main page
                 </a>
-                <a href="media.html" class="btn-outline">
+                <a style="color: black;" href="media.html" class="btn-outline">
                   Media about us
                 </a>
               </div>
@@ -164,220 +203,103 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="container">
-        <div class="footer-grid">
-          <div>
-            <div class="footer-title" data-i18n="footer.brand.title">
-              REPRONOVA
-            </div>
-            <p
-              style="font-size: 0.95rem; opacity: 0.9; line-height: 1.7"
-              data-i18n="footer.brand.text"
-            >
-              International reproductive law agency since 2004.<br />
-              Legal support for surrogacy and gamete donation programs.
-            </p>
-            <div class="footer-socials">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-x-twitter"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="footer-logo" href="#top" aria-label="REPRONOVA homepage">REPRONOVA</a>
+            <p class="footer-tagline">Follow us</p>
+
+            <div class="footer-socials" aria-label="Social links">
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+              <a href="#" aria-label="X" title="X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+              <a href="#" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div>
-            <div class="footer-title" data-i18n="footer.about.title">
-              About Us
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <div class="footer-col">
+              <div class="footer-title">Company</div>
+              <ul class="footer-links">
+                <li><a href="about/mission.html">Mission</a></li>
+                <li><a href="about/team.html">Team</a></li>
+                <li><a href="founder.html">Founder</a></li>
+                <li><a href="media.html">Media</a></li>
+              </ul>
             </div>
-            <ul class="footer-links">
-              <li>
-                <a href="about/mission.html" data-i18n="footer.about.mission">
-                  Mission
-                </a>
-              </li>
-              <li>
-                <a href="about/team.html" data-i18n="footer.about.team">
-                  Team
-                </a>
-              </li>
-              <li>
-                <a href="founder.html" data-i18n="footer.about.founder">
-                  Founder
-                </a>
-              </li>
-              <li>
-                <a href="media.html" data-i18n="footer.about.media">
-                  Media about us
-                </a>
-              </li>
-            </ul>
-          </div>
 
-          <div>
-            <div class="footer-title" data-i18n="footer.services.title">
-              Services
+            <div class="footer-col">
+              <div class="footer-title">Services</div>
+              <ul class="footer-links">
+                <li><a href="services.html">Full list</a></li>
+                <li><a href="services/legal-opinion.html">Legal opinions</a></li>
+                <li><a href="services/independent-advisor.html">Independent advisor</a></li>
+              </ul>
             </div>
-            <ul class="footer-links">
-              <li>
-                <a href="services.html" data-i18n="footer.services.all">
-                  Full list
-                </a>
-              </li>
-              <li>
-                <a
-                  href="services/legal-opinion.html"
-                  data-i18n="footer.services.legalOpinions"
-                >
-                  Legal opinions
-                </a>
-              </li>
-              <li>
-                <a
-                  href="services/independent-advisor.html"
-                  data-i18n="footer.services.advisor"
-                >
-                  Independent legal advisor
-                </a>
-              </li>
-            </ul>
-          </div>
 
-          <div>
-            <div class="footer-title" data-i18n="footer.resources.title">
-              Resources
+            <div class="footer-col">
+              <div class="footer-title">Resources</div>
+              <ul class="footer-links">
+                <li><a href="resources/legislation.html">Legislation</a></li>
+                <li><a href="resources/publications.html">Publications</a></li>
+                <li><a href="resources/faq.html">FAQ</a></li>
+                <li><a href="resources/guides.html">Guides</a></li>
+              </ul>
             </div>
-            <ul class="footer-links">
-              <li>
-                <a
-                  href="resources/legislation.html"
-                  data-i18n="footer.resources.legislation"
-                >
-                  Legislation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="resources/publications.html"
-                  data-i18n="footer.resources.publications"
-                >
-                  Publications
-                </a>
-              </li>
-              <li>
-                <a
-                  href="resources/faq.html"
-                  data-i18n="footer.resources.faq"
-                >
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a
-                  href="resources/guides.html"
-                  data-i18n="footer.resources.guides"
-                >
-                  Guides
-                </a>
-              </li>
-            </ul>
-          </div>
 
-          <div>
-            <div class="footer-title" data-i18n="footer.news.title">
-              News &amp; Events
+            <div class="footer-col">
+              <div class="footer-title">Updates</div>
+              <ul class="footer-links">
+                <li><a href="news.html">News</a></li>
+                <li><a href="events/our.html">Our events</a></li>
+                <li><a href="partners/clinics.html">Partners</a></li>
+              </ul>
             </div>
-            <ul class="footer-links">
-              <li>
-                <a
-                  href="news/industry.html"
-                  data-i18n="footer.news.industry"
-                >
-                  Industry news
-                </a>
-              </li>
-              <li>
-                <a href="events/our.html" data-i18n="footer.news.our">
-                  Our events
-                </a>
-              </li>
-              <li>
-                <a href="events/other.html" data-i18n="footer.news.other">
-                  Other events
-                </a>
-              </li>
-            </ul>
-          </div>
+          </nav>
 
-          <div>
-            <div class="footer-title" data-i18n="footer.partners.title">
-              Partners
-            </div>
-            <ul class="footer-links">
-              <li>
-                <a
-                  href="partners/clinics.html"
-                  data-i18n="footer.partners.clinics"
-                >
-                  Clinics
-                </a>
-              </li>
-              <li>
-                <a
-                  href="partners/law-firms.html"
-                  data-i18n="footer.partners.lawFirms"
-                >
-                  Law firms
-                </a>
-              </li>
-              <li>
-                <a
-                  href="partners/cryobanks.html"
-                  data-i18n="footer.partners.cryobanks"
-                >
-                  Cryobanks
-                </a>
-              </li>
-              <li>
-                <a
-                  href="partners/dna-labs.html"
-                  data-i18n="footer.partners.dnaLabs"
-                >
-                  DNA labs
-                </a>
-              </li>
-            </ul>
-          </div>
+          <div class="footer-actions">
+            <div class="footer-title">Contact</div>
 
-          <div>
-            <div class="footer-title" data-i18n="footer.subscribe.title">
-              Subscribe
+            <div class="footer-contact">
+              <a class="footer-contact-item" href="mailto:info@repronova.com">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                <span>info@repronova.com</span>
+              </a>
+
+              <a class="footer-contact-item" href="tel:+41445051510">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <span>+41 44 505 15 10</span>
+              </a>
+
+              <div class="footer-contact-item footer-contact-item--muted">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <span>Switzerland · Remote worldwide</span>
+              </div>
             </div>
-            <form class="subscribe-form" id="subscribe-form">
-              <input
-                type="email"
-                id="subscribe-email"
-                required
-                data-i18n="footer.subscribe.placeholder"
-                placeholder="your@email.com"
-              />
-              <button
-                class="btn-primary"
-                type="submit"
-                data-i18n="footer.subscribe.button"
-              >
-                Subscribe
-              </button>
-              <p
-                id="subscribe-message"
-                style="font-size: 0.8rem; margin-top: 4px; opacity: 0.8"
-              ></p>
+
+            <form class="footer-subscribe" id="subscribe-form">
+              <label class="sr-only" for="subscribe-email">Email</label>
+              <div class="footer-subscribe-row">
+                <input type="email" id="subscribe-email" required placeholder="your@email.com" />
+                <button class="btn-primary" type="submit">Subscribe</button>
+              </div>
+              <p id="subscribe-message" class="footer-note"></p>
             </form>
           </div>
         </div>
 
-        <div class="footer-bottom" data-i18n="footer.bottom">
-          © 2025 REPRONOVA. All rights reserved.
+        <div class="footer-bottom">
+          <div class="footer-legal">
+            <a href="policies/privacy-policy.html">Privacy Policy</a>
+            <span aria-hidden="true">·</span>
+            <a href="policies/cookie-policy.html">Cookies Policy</a>
+            <span aria-hidden="true">·</span>
+            <a href="policies/terms-and-conditions.html">Terms and Conditions</a>
+          </div>
+
+          <div class="footer-copy">© 2025 REPRONOVA. All rights reserved.</div>
         </div>
       </div>
     </footer>

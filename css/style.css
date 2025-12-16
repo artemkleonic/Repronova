@@ -922,7 +922,7 @@ main { margin-top: var(--header-height); }
 }
 
 .seen-logo img{
-  height: 56px;
+  height: 117px;
   width: auto;
   max-width: 150px;
   object-fit: contain;
@@ -1341,3 +1341,4 @@ mark.repro-mark{
   color: var(--text);
   padding: 0 2px;
 }
+
