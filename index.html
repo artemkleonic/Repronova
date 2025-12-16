@@ -74,7 +74,7 @@
                       EN — English
                     </button>
                     <button data-lang="es" type="button" role="menuitem">ES — Español</button>
-                    <button data-lang="de" type="button" role="menuitem">DE — Deutsch</button>
+                    <!-- ✅ УБРАН НЕМЕЦКИЙ -->
                     <button data-lang="ru" type="button" role="menuitem">RU — Русский</button>
                   </div>
                 </div>
@@ -157,30 +157,39 @@
       <section class="band band-hero" id="hero">
         <div class="container hero-layout">
           <div class="hero-content">
-            <div class="hero-inner" data-aos="fade-right">
-              <div class="hero-kicker">International reproductive law agency</div>
+           <div class="hero-inner" data-aos="fade-right">
+  <!-- Optional line from email -->
+  <div class="hero-pretitle">
+    Consulting, legal expertise, and services in the field of assisted human reproduction
+  </div>
 
-              <h1 class="hero-title">
-                Creating families<br />around the world
-              </h1>
+  <!-- [Small Top Header] -->
+  <div class="hero-kicker">Global Consulting &amp; Legal Expertise in Assisted Reproductive Technology</div>
 
-              <p class="hero-subtitle">
-                We guide surrogacy and gamete donation programs in more than 30 countries, ensuring legal
-                safety for parents and children.
-              </p>
+  <!-- [Main Big Headline - Slogan] -->
+  <h1 class="hero-title">SAFEGUARDING YOUR PATH TO PARENTHOOD</h1>
 
-              <p class="hero-meta">20+ years of experience · 30+ countries · 1000+ successful cases</p>
+  <!-- [Sub-text] -->
+  <p class="hero-subtitle">
+    REPRONOVA is a premier international agency dedicated to independent legal and consulting support in
+    the field of reproductive medicine. We navigate the complexities of surrogacy and donation ensuring
+    transparency, ethical standards, and complete legal safety for intended parents worldwide.
+  </p>
 
-              <div class="hero-cta">
-                <a href="#contacts" class="btn-primary">Book a consultation</a>
-                <a href="#services" class="btn-outline">Learn more</a>
-              </div>
+  <!-- [Separator Line or visual block] -->
+  <div class="hero-sep" aria-hidden="true"></div>
 
-              <p class="hero-note">
-                We are fully independent from clinics and act only in the interests of our clients.
-              </p>
-            </div>
-          </div>
+  <!-- Tagline line -->
+  <p class="hero-meta">
+    SCIENCE &bull; LAW &bull; ETHICS &bull; SUPPORT &bull; EXPERTISE &bull; RESPONSIBILITY &bull; SAFETY
+  </p>
+
+  <div class="hero-cta">
+    <a href="#contacts" class="btn-primary">Book a consultation</a>
+    <a href="#services" class="btn-outline">Learn more</a>
+  </div>
+</div>
+
         </div>
       </section>
 
@@ -202,10 +211,10 @@
             coordinators speaks several languages and supports families from the first consultation to
             obtaining the child’s documents.
           </p>
-          <div class="section-cta-center" data-aos="fade-up" data-aos-delay="180">
-  <a href="about/mission.html" class="btn-primary">Learn more about us</a>
-</div>
 
+          <div class="section-cta-center" data-aos="fade-up" data-aos-delay="180">
+            <a href="about/mission.html" class="btn-primary">Learn more about us</a>
+          </div>
         </div>
       </section>
 
@@ -237,7 +246,6 @@
               <div class="stat-label">countries</div>
             </div>
 
-            <!-- ✅ HERE: FIXED FAMILY ICON -->
             <div class="stat-item">
               <div class="stat-icon stat-icon--family" aria-hidden="true">
                 <span class="family-stack" aria-hidden="true">
@@ -249,7 +257,6 @@
               <div class="stat-number" data-counter="1000">0</div>
               <div class="stat-label">families supported</div>
             </div>
-            <!-- ✅ /FIX -->
           </div>
         </div>
       </section>
@@ -288,34 +295,18 @@
                 <img src="img/media/marieclaire.png" alt="Marie Claire" />
               </a>
 
-              <a
-                class="seen-logo"
-                href="https://www.abc.net.au/news/2019-08-21/motherland/11432194"
-                target="_blank"
-                rel="noopener"
-              >
+              <a class="seen-logo" href="https://www.abc.net.au/news/2019-08-21/motherland/11432194" target="_blank" rel="noopener">
                 <img src="img/media/abc.png" alt="ABC" />
               </a>
 
-              <a
-                class="seen-logo"
-                href="https://amp.dw.com/en/coronavirus-babies-born-to-surrogates-stranded-in-ukraine-clinic/a-53547276"
-                target="_blank"
-                rel="noopener"
-              >
+              <a class="seen-logo" href="https://amp.dw.com/en/coronavirus-babies-born-to-surrogates-stranded-in-ukraine-clinic/a-53547276" target="_blank" rel="noopener">
                 <img src="img/media/dw.png" alt="Deutsche Welle" />
               </a>
 
-              <a
-                class="seen-logo"
-                href="https://www.aljazeera.com/features/2018/9/13/ukraines-baby-factories-the-human-cost-of-surrogacy"
-                target="_blank"
-                rel="noopener"
-              >
+              <a class="seen-logo" href="https://www.aljazeera.com/features/2018/9/13/ukraines-baby-factories-the-human-cost-of-surrogacy" target="_blank" rel="noopener">
                 <img src="img/media/aljazeera.png" alt="Al Jazeera" />
               </a>
 
-              <!-- added tabloids -->
               <a class="seen-logo" href="#" target="_blank" rel="noopener">
                 <img src="img/media/dailymail.png" alt="Daily Mail" />
               </a>
@@ -339,12 +330,16 @@
               <a class="seen-logo" href="#" target="_blank" rel="noopener">
                 <img src="img/media/nbc.png" alt="NBC" />
               </a>
+
               <a class="seen-logo" href="#" target="_blank" rel="noopener">
                 <img src="img/media/orf.png" alt="Orf wie wir." />
               </a>
+
+              <!-- ✅ последние два: будут увеличены через CSS -->
               <a class="seen-logo seen-logo-spieger" href="#" target="_blank" rel="noopener">
                 <img src="img/media/spiegel.png" alt="Der Spiegel" />
               </a>
+
               <a class="seen-logo seen-logo-afton" href="#" target="_blank" rel="noopener">
                 <img src="img/media/aftonbladet.png" alt="Aftonbladet" />
               </a>
@@ -399,26 +394,19 @@
                     Legal and organisational support of programs in safe jurisdictions: country selection,
                     contract review and full coordination.
                   </p>
-                  <a href="services/surrogacy.html">
-                    Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                  </a>
+                  <a href="services/surrogacy.html">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </article>
               </div>
 
               <div class="swiper-slide">
                 <article class="card">
-                  <div
-                    class="card-image"
-                    style="background-image: url('./img/services/gamete-domenation.png')"
-                  ></div>
+                  <div class="card-image" style="background-image: url('./img/services/gamete-domenation.png')"></div>
                   <h3>Gamete donation</h3>
                   <p>
                     Work with vetted donor banks in Europe, the US, Canada and other countries. Legal
                     analysis and child-rights protection.
                   </p>
-                  <a href="services/donation.html">
-                    Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                  </a>
+                  <a href="services/donation.html">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </article>
               </div>
 
@@ -430,9 +418,7 @@
                     Review of contracts, programs and clinics before signing. Risk assessment and
                     parentage/citizenship scenarios.
                   </p>
-                  <a href="services/legal.html">
-                    Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                  </a>
+                  <a href="services/legal.html">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </article>
               </div>
             </div>
@@ -487,44 +473,32 @@
 
           <div class="country-pills" data-aos="fade-up" data-aos-delay="80">
             <a class="country-pill" href="resources/guides/mexico.html">
-              <span class="flag-3d">
-                <img src="img/flags/mexico.png" alt="Mexico flag" />
-              </span>
+              <span class="flag-3d"><img src="img/flags/mexico.png" alt="Mexico flag" /></span>
               <span class="country-name">MEXICO</span>
             </a>
 
             <a class="country-pill" href="resources/guides/georgia.html">
-              <span class="flag-3d">
-                <img src="img/flags/georgia.png" alt="Georgia flag" />
-              </span>
+              <span class="flag-3d"><img src="img/flags/georgia.png" alt="Georgia flag" /></span>
               <span class="country-name">GEORGIA</span>
             </a>
 
             <a class="country-pill" href="resources/guides/ukraine.html">
-              <span class="flag-3d">
-                <img src="img/flags/ukraine.png" alt="Ukraine flag" />
-              </span>
+              <span class="flag-3d"><img src="img/flags/ukraine.png" alt="Ukraine flag" /></span>
               <span class="country-name">UKRAINE</span>
             </a>
 
             <a class="country-pill" href="resources/guides/armenia.html">
-              <span class="flag-3d">
-                <img src="img/flags/armenia.png" alt="Armenia flag" />
-              </span>
+              <span class="flag-3d"><img src="img/flags/armenia.png" alt="Armenia flag" /></span>
               <span class="country-name">ARMENIA</span>
             </a>
 
             <a class="country-pill" href="resources/guides/usa.html">
-              <span class="flag-3d">
-                <img src="img/flags/usa.png" alt="USA flag" />
-              </span>
+              <span class="flag-3d"><img src="img/flags/usa.png" alt="USA flag" /></span>
               <span class="country-name">USA</span>
             </a>
 
             <a class="country-pill" href="resources/guides/kyrgyzstan.html">
-              <span class="flag-3d">
-                <img src="img/flags/kyrgyzstan.png" alt="Kyrgyzstan flag" />
-              </span>
+              <span class="flag-3d"><img src="img/flags/kyrgyzstan.png" alt="Kyrgyzstan flag" /></span>
               <span class="country-name">KYRGYZSTAN</span>
             </a>
 
@@ -661,7 +635,7 @@
             <a class="partner-cat" href="partners/cryobanks.html">Cryobanks</a>
             <a class="partner-cat" href="partners/dna.html">DNA laboratories</a>
             <a class="partner-cat" href="partners/translators.html">Interpreters &amp; translators</a>
-            <a class="partner-cat" href="partners/others.html">Others</a>
+            <a class="partner-cat others-cat" href="partners/others.html">Others</a>
           </div>
         </div>
       </section>
@@ -839,7 +813,5 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-
- 
   </body>
 </html>
